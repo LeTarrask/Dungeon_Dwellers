@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		791FF2C72B4880AC006073D4 /* Dungeon_DwellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */; };
-		791FF2C92B4880AC006073D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C82B4880AC006073D4 /* ContentView.swift */; };
 		791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CA2B4880AD006073D4 /* Assets.xcassets */; };
 		791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */; };
+		791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */; };
+		791FF2DF2B4880BA006073D4 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D92B4880BA006073D4 /* Monster.swift */; };
+		791FF2E02B4880BA006073D4 /* srd_5e_monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2DA2B4880BA006073D4 /* srd_5e_monsters.json */; };
+		791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DC2B4880BA006073D4 /* MonsterListView.swift */; };
+		791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeon Dwellers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon_DwellersApp.swift; sourceTree = "<group>"; };
-		791FF2C82B4880AC006073D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		791FF2CA2B4880AD006073D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dungeon_Dwellers.entitlements; sourceTree = "<group>"; };
 		791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListViewModel.swift; sourceTree = "<group>"; };
+		791FF2D92B4880BA006073D4 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		791FF2DA2B4880BA006073D4 /* srd_5e_monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = srd_5e_monsters.json; sourceTree = "<group>"; };
+		791FF2DC2B4880BA006073D4 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
+		791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,8 @@
 		791FF2C52B4880AC006073D4 /* Dungeon Dwellers */ = {
 			isa = PBXGroup;
 			children = (
+				791FF2D52B4880BA006073D4 /* Monster Manual */,
 				791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */,
-				791FF2C82B4880AC006073D4 /* ContentView.swift */,
 				791FF2CA2B4880AD006073D4 /* Assets.xcassets */,
 				791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */,
 				791FF2CD2B4880AD006073D4 /* Preview Content */,
@@ -67,6 +75,42 @@
 				791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		791FF2D52B4880BA006073D4 /* Monster Manual */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2D62B4880BA006073D4 /* ViewModel */,
+				791FF2D82B4880BA006073D4 /* Model */,
+				791FF2DB2B4880BA006073D4 /* Views */,
+			);
+			path = "Monster Manual";
+			sourceTree = "<group>";
+		};
+		791FF2D62B4880BA006073D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		791FF2D82B4880BA006073D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2D92B4880BA006073D4 /* Monster.swift */,
+				791FF2DA2B4880BA006073D4 /* srd_5e_monsters.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		791FF2DB2B4880BA006073D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2DC2B4880BA006073D4 /* MonsterListView.swift */,
+				791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +173,7 @@
 			files = (
 				791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */,
 				791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */,
+				791FF2E02B4880BA006073D4 /* srd_5e_monsters.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				791FF2C92B4880AC006073D4 /* ContentView.swift in Sources */,
 				791FF2C72B4880AC006073D4 /* Dungeon_DwellersApp.swift in Sources */,
+				791FF2DF2B4880BA006073D4 /* Monster.swift in Sources */,
+				791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */,
+				791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */,
+				791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
