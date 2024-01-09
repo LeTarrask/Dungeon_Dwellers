@@ -9,13 +9,13 @@ import SwiftUI
 
 struct MonsterDetailView: View {
     let monster: Monster
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
                     Text(monster.name).bold()
-                        .font(.title3)
+                        .font(.title2)
                     Text(monster.meta)
                         .italic()
                 }
@@ -66,50 +66,66 @@ struct MonsterDetailView: View {
                     Trait(title: "Challenge ", description: monster.challenge ?? "")
                 }
 
-                Divider()
+                if monster.traits != nil {
+                    Divider()
+                    MarkdownLabel(title: "TRAITS", markdown: monster.traits ?? "")
+                }
 
-                // TODO: maybe convert this html to md?
-                Text(monster.traits ?? "")
+                if monster.actions != nil {
+                    Divider()
 
-                Divider()
+                    MarkdownLabel(title: "ACTIONS", markdown: monster.actions ?? "")
+                }
 
-                Text("ACTIONS")
+                if monster.legendaryActions != nil {
+                    Divider()
 
-                Text(monster.actions ?? "")
-
-                Text("LEGENDARY ACTIONS")
-
-                Text(monster.legendaryActions ?? "")
+                    MarkdownLabel(title: "LEGENDARY ACTIONS", markdown: monster.legendaryActions ?? "")
+                }
             }
             .padding()
         }
     }
-}
 
-struct Trait: View {
-    let title: String
-    let description: String
+    struct MarkdownLabel: View {
+        let title: String
+        let markdown: String
 
-    var body: some View {
-        HStack {
-            Text(title).bold()
-            Text(description)
+        var body: some View {
+            VStack(alignment: .leading) {
+                Text(title)
+                    .font(.headline)
+                Text(LocalizedStringKey(markdown))
+            }
+        }
+    }
+
+    struct Trait: View {
+        let title: String
+        let description: String
+
+        var body: some View {
+            HStack(alignment: .firstTextBaseline) {
+                Text(title).bold()
+                Text(description)
+            }
+        }
+    }
+
+    struct Attribute: View {
+        let type: String
+        let value: String
+        let mod: String
+
+        var body: some View {
+            VStack {
+                Text(type).bold()
+                Text(value + " " + mod)
+            }
         }
     }
 }
 
-struct Attribute: View {
-    let type: String
-    let value: String
-    let mod: String
-
-    var body: some View {
-        VStack {
-            Text(type).bold()
-            Text(value + " " + mod)
-        }
-    }
-}
 
 #Preview {
     let model = MonsterListViewModel()
