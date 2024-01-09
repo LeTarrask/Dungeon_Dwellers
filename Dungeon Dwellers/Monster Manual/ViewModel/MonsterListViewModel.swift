@@ -15,7 +15,7 @@ class MonsterListViewModel: ObservableObject {
         if searchText.isEmpty {
             return monsters
         } else {
-            return monsters.filter { $0.name.contains(searchText)}
+            return monsters.filter { $0.name.lowercased().contains(searchText.lowercased())}
         }
     }
 
