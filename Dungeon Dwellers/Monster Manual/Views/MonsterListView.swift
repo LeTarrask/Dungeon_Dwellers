@@ -20,7 +20,6 @@ struct MonsterListView: View {
                         .toggleStyle(.switch)
                 }.padding()
 
-
                 List {
                     ForEach(viewModel.filteredMonsters, id: \.name) { monster in
                         NavigationLink(value: monster,

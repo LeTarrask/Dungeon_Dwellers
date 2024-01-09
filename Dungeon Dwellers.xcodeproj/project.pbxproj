@@ -160,6 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7967295E2B4D7C0800D1319A /* PBXTargetDependency */,
 			);
 			name = "Dungeon Dwellers";
 			productName = "Dungeon Dwellers";
@@ -274,6 +275,10 @@
 			isa = PBXTargetDependency;
 			target = 791FF2C22B4880AC006073D4 /* Dungeon Dwellers */;
 			targetProxy = 796729552B4D65FB00D1319A /* PBXContainerItemProxy */;
+		};
+		7967295E2B4D7C0800D1319A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7967295D2B4D7C0800D1319A /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,6 +559,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7967295D2B4D7C0800D1319A /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 791FF2BB2B4880AC006073D4 /* Project object */;
 }
