@@ -15,7 +15,19 @@
 		791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DC2B4880BA006073D4 /* MonsterListView.swift */; };
 		791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */; };
 		7967294A2B4D5FE700D1319A /* srd_5e_monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 796729492B4D5FE700D1319A /* srd_5e_monsters.json */; };
+		7967294C2B4D60F200D1319A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7967294B2B4D60F100D1319A /* README.md */; };
+		796729542B4D65FB00D1319A /* Dungeon_DwellersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796729552B4D65FB00D1319A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791FF2BB2B4880AC006073D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791FF2C22B4880AC006073D4;
+			remoteInfo = "Dungeon Dwellers";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeon Dwellers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +40,20 @@
 		791FF2DC2B4880BA006073D4 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
 		796729492B4D5FE700D1319A /* srd_5e_monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = srd_5e_monsters.json; sourceTree = "<group>"; };
+		7967294B2B4D60F100D1319A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		796729512B4D65FB00D1319A /* Dungeon DwellersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dungeon DwellersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon_DwellersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		791FF2C02B4880AC006073D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7967294E2B4D65FB00D1319A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +66,9 @@
 		791FF2BA2B4880AC006073D4 = {
 			isa = PBXGroup;
 			children = (
+				7967294B2B4D60F100D1319A /* README.md */,
 				791FF2C52B4880AC006073D4 /* Dungeon Dwellers */,
+				796729522B4D65FB00D1319A /* Dungeon DwellersTests */,
 				791FF2C42B4880AC006073D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */,
+				796729512B4D65FB00D1319A /* Dungeon DwellersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +138,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		796729522B4D65FB00D1319A /* Dungeon DwellersTests */ = {
+			isa = PBXGroup;
+			children = (
+				796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */,
+			);
+			path = "Dungeon DwellersTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +166,24 @@
 			productReference = 791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		796729502B4D65FB00D1319A /* Dungeon DwellersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796729572B4D65FB00D1319A /* Build configuration list for PBXNativeTarget "Dungeon DwellersTests" */;
+			buildPhases = (
+				7967294D2B4D65FB00D1319A /* Sources */,
+				7967294E2B4D65FB00D1319A /* Frameworks */,
+				7967294F2B4D65FB00D1319A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796729562B4D65FB00D1319A /* PBXTargetDependency */,
+			);
+			name = "Dungeon DwellersTests";
+			productName = "Dungeon DwellersTests";
+			productReference = 796729512B4D65FB00D1319A /* Dungeon DwellersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +197,10 @@
 					791FF2C22B4880AC006073D4 = {
 						CreatedOnToolsVersion = 15.1;
 					};
+					796729502B4D65FB00D1319A = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 791FF2C22B4880AC006073D4;
+					};
 				};
 			};
 			buildConfigurationList = 791FF2BE2B4880AC006073D4 /* Build configuration list for PBXProject "Dungeon Dwellers" */;
@@ -157,11 +212,15 @@
 				Base,
 			);
 			mainGroup = 791FF2BA2B4880AC006073D4;
+			packageReferences = (
+				7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 791FF2C42B4880AC006073D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				791FF2C22B4880AC006073D4 /* Dungeon Dwellers */,
+				796729502B4D65FB00D1319A /* Dungeon DwellersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,7 +232,15 @@
 			files = (
 				791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */,
 				791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */,
+				7967294C2B4D60F200D1319A /* README.md in Resources */,
 				7967294A2B4D5FE700D1319A /* srd_5e_monsters.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7967294F2B4D65FB00D1319A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +259,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7967294D2B4D65FB00D1319A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796729542B4D65FB00D1319A /* Dungeon_DwellersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		796729562B4D65FB00D1319A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791FF2C22B4880AC006073D4 /* Dungeon Dwellers */;
+			targetProxy = 796729552B4D65FB00D1319A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		791FF2D02B4880AD006073D4 /* Debug */ = {
@@ -385,6 +468,50 @@
 			};
 			name = Release;
 		};
+		796729582B4D65FB00D1319A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2BC5TCSR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tarrask.Dungeon-DwellersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dungeon Dwellers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dungeon Dwellers";
+			};
+			name = Debug;
+		};
+		796729592B4D65FB00D1319A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2BC5TCSR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tarrask.Dungeon-DwellersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dungeon Dwellers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dungeon Dwellers";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,7 +533,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		796729572B4D65FB00D1319A /* Build configuration list for PBXNativeTarget "Dungeon DwellersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796729582B4D65FB00D1319A /* Debug */,
+				796729592B4D65FB00D1319A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 791FF2BB2B4880AC006073D4 /* Project object */;
 }
