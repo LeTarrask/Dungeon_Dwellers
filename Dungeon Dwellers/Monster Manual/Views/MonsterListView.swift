@@ -13,7 +13,14 @@ struct MonsterListView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("SRD Monsters \(viewModel.monsters.count)")
+                VStack(alignment: .leading) {
+                    Text("SRD Monsters \(viewModel.monsters.count)")
+
+                    Toggle("Search by monster trait", isOn: $viewModel.searchByName)
+                        .toggleStyle(.switch)
+                }.padding()
+
+
                 List {
                     ForEach(viewModel.filteredMonsters, id: \.name) { monster in
                         NavigationLink(value: monster,

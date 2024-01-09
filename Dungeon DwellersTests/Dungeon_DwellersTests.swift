@@ -44,7 +44,6 @@ final class Dungeon_DwellersTests: XCTestCase {
         XCTAssertTrue(viewModel.filteredMonsters.allSatisfy { $0.name.contains("oblin") })
 
         // Assert that the filteredMonsters array returns a subset of monsters that match the searchText
-        print(viewModel.filteredMonsters.compactMap{$0.name})
         XCTAssertEqual(viewModel.filteredMonsters.count, 2)
     }
 }
