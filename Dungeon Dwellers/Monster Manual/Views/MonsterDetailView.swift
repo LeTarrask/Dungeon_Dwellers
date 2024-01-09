@@ -126,7 +126,6 @@ struct MonsterDetailView: View {
     }
 }
 
-
 #Preview {
     let model = MonsterListViewModel()
     return MonsterDetailView(monster: model.monsters.first!)

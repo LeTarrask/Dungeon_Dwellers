@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		791FF2C72B4880AC006073D4 /* Dungeon_DwellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */; };
+		791FF2C72B4880AC006073D4 /* DungeonDwellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */; };
 		791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CA2B4880AD006073D4 /* Assets.xcassets */; };
 		791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */; };
 		791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */; };
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeon Dwellers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon_DwellersApp.swift; sourceTree = "<group>"; };
+		791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDwellersApp.swift; sourceTree = "<group>"; };
 		791FF2CA2B4880AD006073D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dungeon_Dwellers.entitlements; sourceTree = "<group>"; };
 		791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				791FF2D52B4880BA006073D4 /* Monster Manual */,
-				791FF2C62B4880AC006073D4 /* Dungeon_DwellersApp.swift */,
+				791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */,
 				791FF2CA2B4880AD006073D4 /* Assets.xcassets */,
 				791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */,
 				791FF2CD2B4880AD006073D4 /* Preview Content */,
@@ -160,6 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7967295C2B4D6D7B00D1319A /* PBXTargetDependency */,
 			);
 			name = "Dungeon Dwellers";
 			productName = "Dungeon Dwellers";
@@ -251,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				791FF2C72B4880AC006073D4 /* Dungeon_DwellersApp.swift in Sources */,
+				791FF2C72B4880AC006073D4 /* DungeonDwellersApp.swift in Sources */,
 				791FF2DF2B4880BA006073D4 /* Monster.swift in Sources */,
 				791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */,
 				791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */,
@@ -274,6 +275,10 @@
 			isa = PBXTargetDependency;
 			target = 791FF2C22B4880AC006073D4 /* Dungeon Dwellers */;
 			targetProxy = 796729552B4D65FB00D1319A /* PBXContainerItemProxy */;
+		};
+		7967295C2B4D6D7B00D1319A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7967295B2B4D6D7B00D1319A /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,6 +559,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7967295B2B4D6D7B00D1319A /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 791FF2BB2B4880AC006073D4 /* Project object */;
 }

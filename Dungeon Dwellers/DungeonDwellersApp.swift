@@ -1,5 +1,5 @@
 //
-//  Dungeon_DwellersApp.swift
+//  DungeonDwellersApp.swift
 //  Dungeon Dwellers
 //
 //  Created by Alex Luna on 05/01/2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Dungeon_DwellersApp: App {
+struct DungeonDwellersApp: App {
     var body: some Scene {
         WindowGroup {
             MonsterListView()

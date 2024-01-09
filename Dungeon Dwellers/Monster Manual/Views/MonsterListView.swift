@@ -41,5 +41,3 @@ struct MonsterListView: View {
 #Preview {
     MonsterListView()
 }
-
-
