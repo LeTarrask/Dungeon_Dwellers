@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - Monster
-struct Monster: Codable, Hashable {
+// MARK: - Monster Adapter
+struct MonsterAdapter: Codable, Hashable {
     let name, meta, armorClass, hitPoints: String
     let speed, str, strMod, dex: String
     let dexMod, con, conMod, int: String

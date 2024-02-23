@@ -5,44 +5,51 @@
 //  Created by Alex Luna on 05/01/2024.
 //
 
-import Foundation
+import CoreData
+import SwiftUI
 
 class MonsterListViewModel: ObservableObject {
     @Published var monsters: [Monster] = []
     @Published var searchText = ""
     @Published var searchByName: Bool = true
+    @Published var filterByFavorite = false
 
     var filteredMonsters: [Monster] {
-        if searchText.isEmpty {
-            return monsters
-        } else {
-            switch searchByName {
-            case true:
-                return monsters.filter { $0.name.lowercased().contains(searchText.lowercased())}
-            case false:
-                return monsters.filter {
-                    ($0.traits?.lowercased().contains(searchText.lowercased()) ?? false) ||
-                    ($0.actions?.lowercased().contains(searchText.lowercased()) ?? false) ||
-                    ($0.legendaryActions?.lowercased().contains(searchText.lowercased()) ?? false)
+        guard !searchText.isEmpty else {
+            return filterByFavorite ? monsters.filter { $0.isFavorite } : monsters
+        }
+
+        return monsters.filter { monster in
+            let lowercasedSearchText = searchText.lowercased()
+
+            let nameMatch: Bool
+            if searchByName {
+                guard let name = monster.name else {
+                    return false
                 }
+                nameMatch =  name.lowercased().contains(lowercasedSearchText)
+            } else {
+                let traitsMatch = monster.traits?.lowercased().contains(lowercasedSearchText) ?? false
+                let actionsMatch = monster.actions?.lowercased().contains(lowercasedSearchText) ?? false
+                let legendaryActionsMatch = monster.legendaryActions?.lowercased().contains(lowercasedSearchText) ?? false
+
+                nameMatch =  traitsMatch || actionsMatch || legendaryActionsMatch
             }
+
+            let favoriteMatch = filterByFavorite ? monster.isFavorite : true
+
+            return nameMatch && favoriteMatch
         }
     }
 
-    init() {
-        loadLocalSRDData()
-    }
-
-    private func loadLocalSRDData() {
-        guard let path = Bundle.main.path(forResource: "srd_5e_monsters", ofType: "json") else { return }
-
-        let url = URL(fileURLWithPath: path)
+    func loadMonsters(context: NSManagedObjectContext) {
+        let request: NSFetchRequest<Monster> = Monster.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Monster.name, ascending: true)]
 
         do {
-            let data = try Data(contentsOf: url)
-            self.monsters = try JSONDecoder().decode([Monster].self, from: data)
+            monsters = try context.fetch(request)
         } catch {
-            print(error.localizedDescription)
+            print("Failed to fetch monsters: \(error)")
         }
     }
 }

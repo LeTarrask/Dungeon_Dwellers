@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79007BF02B894C98005D9E26 /* MarkdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BEF2B894C98005D9E26 /* MarkdownLabel.swift */; };
+		79007BF22B894CC1005D9E26 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BF12B894CC1005D9E26 /* Trait.swift */; };
+		79007BF42B894CDA005D9E26 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BF32B894CDA005D9E26 /* Attribute.swift */; };
+		79007BF72B894D1F005D9E26 /* MonsterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BF62B894D1F005D9E26 /* MonsterHeader.swift */; };
+		79007BF92B894D87005D9E26 /* MonsterCombatAndAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BF82B894D87005D9E26 /* MonsterCombatAndAttributes.swift */; };
+		79007BFB2B894DC3005D9E26 /* MonsterTraitsAndActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BFA2B894DC3005D9E26 /* MonsterTraitsAndActions.swift */; };
+		79007BFD2B894E1B005D9E26 /* MonsterNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BFC2B894E1B005D9E26 /* MonsterNotes.swift */; };
+		79007BFF2B89599D005D9E26 /* CoreDataJSONImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BFE2B89599D005D9E26 /* CoreDataJSONImporter.swift */; };
+		790CACD02B88E5D200C5B0A4 /* MonsterListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */; };
+		790CACD22B88E68600C5B0A4 /* MonsterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */; };
+		790CACD42B88E75B00C5B0A4 /* StarToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACD32B88E75B00C5B0A4 /* StarToggle.swift */; };
 		791FF2C72B4880AC006073D4 /* DungeonDwellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */; };
 		791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CA2B4880AD006073D4 /* Assets.xcassets */; };
 		791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */; };
 		791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */; };
-		791FF2DF2B4880BA006073D4 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D92B4880BA006073D4 /* Monster.swift */; };
+		791FF2DF2B4880BA006073D4 /* MonsterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D92B4880BA006073D4 /* MonsterAdapter.swift */; };
 		791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DC2B4880BA006073D4 /* MonsterListView.swift */; };
 		791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */; };
 		7967294A2B4D5FE700D1319A /* srd_5e_monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 796729492B4D5FE700D1319A /* srd_5e_monsters.json */; };
 		7967294C2B4D60F200D1319A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7967294B2B4D60F100D1319A /* README.md */; };
 		796729542B4D65FB00D1319A /* Dungeon_DwellersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */; };
+		79BBC7512B88FCC70084A4EF /* Monster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79BBC74F2B88FCC70084A4EF /* Monster.xcdatamodeld */; };
+		79BBC7532B88FE960084A4EF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBC7522B88FE960084A4EF /* PersistenceController.swift */; };
+		79BBC7552B8908230084A4EF /* MonsterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBC7542B8908230084A4EF /* MonsterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +44,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79007BEF2B894C98005D9E26 /* MarkdownLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownLabel.swift; sourceTree = "<group>"; };
+		79007BF12B894CC1005D9E26 /* Trait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
+		79007BF32B894CDA005D9E26 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		79007BF62B894D1F005D9E26 /* MonsterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterHeader.swift; sourceTree = "<group>"; };
+		79007BF82B894D87005D9E26 /* MonsterCombatAndAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCombatAndAttributes.swift; sourceTree = "<group>"; };
+		79007BFA2B894DC3005D9E26 /* MonsterTraitsAndActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTraitsAndActions.swift; sourceTree = "<group>"; };
+		79007BFC2B894E1B005D9E26 /* MonsterNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonsterNotes.swift; path = "Dungeon Dwellers/Monster Manual/Views/Monster Detail/Subviews/MonsterNotes.swift"; sourceTree = SOURCE_ROOT; };
+		79007BFE2B89599D005D9E26 /* CoreDataJSONImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataJSONImporter.swift; sourceTree = "<group>"; };
+		790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListHeader.swift; sourceTree = "<group>"; };
+		790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItemView.swift; sourceTree = "<group>"; };
+		790CACD32B88E75B00C5B0A4 /* StarToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarToggle.swift; sourceTree = "<group>"; };
 		791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeon Dwellers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDwellersApp.swift; sourceTree = "<group>"; };
 		791FF2CA2B4880AD006073D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dungeon_Dwellers.entitlements; sourceTree = "<group>"; };
 		791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListViewModel.swift; sourceTree = "<group>"; };
-		791FF2D92B4880BA006073D4 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		791FF2D92B4880BA006073D4 /* MonsterAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterAdapter.swift; sourceTree = "<group>"; };
 		791FF2DC2B4880BA006073D4 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
 		796729492B4D5FE700D1319A /* srd_5e_monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = srd_5e_monsters.json; sourceTree = "<group>"; };
 		7967294B2B4D60F100D1319A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		796729512B4D65FB00D1319A /* Dungeon DwellersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dungeon DwellersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon_DwellersTests.swift; sourceTree = "<group>"; };
+		79BBC7502B88FCC70084A4EF /* Monster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Monster.xcdatamodel; sourceTree = "<group>"; };
+		79BBC7522B88FE960084A4EF /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		79BBC7542B8908230084A4EF /* MonsterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +91,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79007BEC2B894C6B005D9E26 /* Monster List */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2DC2B4880BA006073D4 /* MonsterListView.swift */,
+				79007BED2B894C74005D9E26 /* Subviews */,
+			);
+			path = "Monster List";
+			sourceTree = "<group>";
+		};
+		79007BED2B894C74005D9E26 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */,
+				790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */,
+				790CACD32B88E75B00C5B0A4 /* StarToggle.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		79007BEE2B894C7E005D9E26 /* Monster Detail */ = {
+			isa = PBXGroup;
+			children = (
+				791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */,
+				79007BF52B894CE7005D9E26 /* Subviews */,
+			);
+			path = "Monster Detail";
+			sourceTree = "<group>";
+		};
+		79007BF52B894CE7005D9E26 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				79007BFC2B894E1B005D9E26 /* MonsterNotes.swift */,
+				79007BF12B894CC1005D9E26 /* Trait.swift */,
+				79007BF82B894D87005D9E26 /* MonsterCombatAndAttributes.swift */,
+				79007BFA2B894DC3005D9E26 /* MonsterTraitsAndActions.swift */,
+				79007BEF2B894C98005D9E26 /* MarkdownLabel.swift */,
+				79007BF32B894CDA005D9E26 /* Attribute.swift */,
+				79007BF62B894D1F005D9E26 /* MonsterHeader.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		791FF2BA2B4880AC006073D4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +155,8 @@
 		791FF2C52B4880AC006073D4 /* Dungeon Dwellers */ = {
 			isa = PBXGroup;
 			children = (
-				791FF2D52B4880BA006073D4 /* Monster Manual */,
 				791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */,
+				791FF2D52B4880BA006073D4 /* Monster Manual */,
 				791FF2CA2B4880AD006073D4 /* Assets.xcassets */,
 				791FF2CC2B4880AD006073D4 /* Dungeon_Dwellers.entitlements */,
 				791FF2CD2B4880AD006073D4 /* Preview Content */,
@@ -116,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				791FF2D72B4880BA006073D4 /* MonsterListViewModel.swift */,
+				79BBC7542B8908230084A4EF /* MonsterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -123,8 +194,11 @@
 		791FF2D82B4880BA006073D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				791FF2D92B4880BA006073D4 /* Monster.swift */,
+				791FF2D92B4880BA006073D4 /* MonsterAdapter.swift */,
+				79BBC74F2B88FCC70084A4EF /* Monster.xcdatamodeld */,
+				79BBC7522B88FE960084A4EF /* PersistenceController.swift */,
 				796729492B4D5FE700D1319A /* srd_5e_monsters.json */,
+				79007BFE2B89599D005D9E26 /* CoreDataJSONImporter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,8 +206,8 @@
 		791FF2DB2B4880BA006073D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				791FF2DC2B4880BA006073D4 /* MonsterListView.swift */,
-				791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */,
+				79007BEC2B894C6B005D9E26 /* Monster List */,
+				79007BEE2B894C7E005D9E26 /* Monster Detail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +234,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7967295E2B4D7C0800D1319A /* PBXTargetDependency */,
 			);
 			name = "Dungeon Dwellers";
 			productName = "Dungeon Dwellers";
@@ -252,10 +325,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79007BF72B894D1F005D9E26 /* MonsterHeader.swift in Sources */,
+				79007BF42B894CDA005D9E26 /* Attribute.swift in Sources */,
+				79BBC7512B88FCC70084A4EF /* Monster.xcdatamodeld in Sources */,
 				791FF2C72B4880AC006073D4 /* DungeonDwellersApp.swift in Sources */,
-				791FF2DF2B4880BA006073D4 /* Monster.swift in Sources */,
+				791FF2DF2B4880BA006073D4 /* MonsterAdapter.swift in Sources */,
+				79007BFB2B894DC3005D9E26 /* MonsterTraitsAndActions.swift in Sources */,
+				79007BFF2B89599D005D9E26 /* CoreDataJSONImporter.swift in Sources */,
+				790CACD22B88E68600C5B0A4 /* MonsterListItemView.swift in Sources */,
+				79007BF22B894CC1005D9E26 /* Trait.swift in Sources */,
+				79BBC7532B88FE960084A4EF /* PersistenceController.swift in Sources */,
+				790CACD42B88E75B00C5B0A4 /* StarToggle.swift in Sources */,
+				79007BF02B894C98005D9E26 /* MarkdownLabel.swift in Sources */,
 				791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */,
+				790CACD02B88E5D200C5B0A4 /* MonsterListHeader.swift in Sources */,
+				79BBC7552B8908230084A4EF /* MonsterViewModel.swift in Sources */,
 				791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */,
+				79007BF92B894D87005D9E26 /* MonsterCombatAndAttributes.swift in Sources */,
+				79007BFD2B894E1B005D9E26 /* MonsterNotes.swift in Sources */,
 				791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +362,6 @@
 			isa = PBXTargetDependency;
 			target = 791FF2C22B4880AC006073D4 /* Dungeon Dwellers */;
 			targetProxy = 796729552B4D65FB00D1319A /* PBXContainerItemProxy */;
-		};
-		7967295E2B4D7C0800D1319A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 7967295D2B4D7C0800D1319A /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -560,13 +643,18 @@
 		};
 /* End XCRemoteSwiftPackageReference section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		7967295D2B4D7C0800D1319A /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
+/* Begin XCVersionGroup section */
+		79BBC74F2B88FCC70084A4EF /* Monster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79BBC7502B88FCC70084A4EF /* Monster.xcdatamodel */,
+			);
+			currentVersion = 79BBC7502B88FCC70084A4EF /* Monster.xcdatamodel */;
+			path = Monster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
 		};
-/* End XCSwiftPackageProductDependency section */
+/* End XCVersionGroup section */
 	};
 	rootObject = 791FF2BB2B4880AC006073D4 /* Project object */;
 }
