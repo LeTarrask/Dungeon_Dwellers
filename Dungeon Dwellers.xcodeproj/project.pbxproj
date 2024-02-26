@@ -17,7 +17,6 @@
 		79007BFF2B89599D005D9E26 /* CoreDataJSONImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79007BFE2B89599D005D9E26 /* CoreDataJSONImporter.swift */; };
 		790CACD02B88E5D200C5B0A4 /* MonsterListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */; };
 		790CACD22B88E68600C5B0A4 /* MonsterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */; };
-		790CACD42B88E75B00C5B0A4 /* StarToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CACD32B88E75B00C5B0A4 /* StarToggle.swift */; };
 		791FF2C72B4880AC006073D4 /* DungeonDwellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */; };
 		791FF2CB2B4880AD006073D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CA2B4880AD006073D4 /* Assets.xcassets */; };
 		791FF2CF2B4880AD006073D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FF2CE2B4880AD006073D4 /* Preview Assets.xcassets */; };
@@ -54,7 +53,6 @@
 		79007BFE2B89599D005D9E26 /* CoreDataJSONImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataJSONImporter.swift; sourceTree = "<group>"; };
 		790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListHeader.swift; sourceTree = "<group>"; };
 		790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItemView.swift; sourceTree = "<group>"; };
-		790CACD32B88E75B00C5B0A4 /* StarToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarToggle.swift; sourceTree = "<group>"; };
 		791FF2C32B4880AC006073D4 /* Dungeon Dwellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeon Dwellers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		791FF2C62B4880AC006073D4 /* DungeonDwellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDwellersApp.swift; sourceTree = "<group>"; };
 		791FF2CA2B4880AD006073D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				790CACCF2B88E5D200C5B0A4 /* MonsterListHeader.swift */,
 				790CACD12B88E68600C5B0A4 /* MonsterListItemView.swift */,
-				790CACD32B88E75B00C5B0A4 /* StarToggle.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -234,6 +231,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				79F85A5D2B8CF0D3003DE5C3 /* PBXTargetDependency */,
 			);
 			name = "Dungeon Dwellers";
 			productName = "Dungeon Dwellers";
@@ -266,7 +264,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					791FF2C22B4880AC006073D4 = {
 						CreatedOnToolsVersion = 15.1;
@@ -335,7 +333,6 @@
 				790CACD22B88E68600C5B0A4 /* MonsterListItemView.swift in Sources */,
 				79007BF22B894CC1005D9E26 /* Trait.swift in Sources */,
 				79BBC7532B88FE960084A4EF /* PersistenceController.swift in Sources */,
-				790CACD42B88E75B00C5B0A4 /* StarToggle.swift in Sources */,
 				79007BF02B894C98005D9E26 /* MarkdownLabel.swift in Sources */,
 				791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */,
 				790CACD02B88E5D200C5B0A4 /* MonsterListHeader.swift in Sources */,
@@ -362,6 +359,10 @@
 			isa = PBXTargetDependency;
 			target = 791FF2C22B4880AC006073D4 /* Dungeon Dwellers */;
 			targetProxy = 796729552B4D65FB00D1319A /* PBXContainerItemProxy */;
+		};
+		79F85A5D2B8CF0D3003DE5C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 79F85A5C2B8CF0D3003DE5C3 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,6 +401,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -461,6 +463,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -488,6 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dungeon Dwellers/Dungeon_Dwellers.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dungeon Dwellers/Preview Content\"";
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -526,6 +530,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dungeon Dwellers/Dungeon_Dwellers.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Dungeon Dwellers/Preview Content\"";
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -562,6 +567,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -584,6 +590,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = L2BC5TCSR5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -642,6 +649,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79F85A5C2B8CF0D3003DE5C3 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7967295A2B4D6B6400D1319A /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79BBC74F2B88FCC70084A4EF /* Monster.xcdatamodeld */ = {

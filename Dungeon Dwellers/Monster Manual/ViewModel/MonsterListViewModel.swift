@@ -31,7 +31,8 @@ class MonsterListViewModel: ObservableObject {
             } else {
                 let traitsMatch = monster.traits?.lowercased().contains(lowercasedSearchText) ?? false
                 let actionsMatch = monster.actions?.lowercased().contains(lowercasedSearchText) ?? false
-                let legendaryActionsMatch = monster.legendaryActions?.lowercased().contains(lowercasedSearchText) ?? false
+                let legendaryActionsMatch = monster.legendaryActions?
+                    .lowercased().contains(lowercasedSearchText) ?? false
 
                 nameMatch =  traitsMatch || actionsMatch || legendaryActionsMatch
             }
