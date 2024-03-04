@@ -12,12 +12,12 @@ struct MonsterListHeader: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("SRD Monsters \(viewModel.monsters.count)")
+            Text("SRD Monsters: \(viewModel.monsters.count)")
 
-            Toggle("Search by monster trait", isOn: $viewModel.searchByName)
+            Toggle("Search by monster trait:", isOn: $viewModel.searchByName)
                 .toggleStyle(.switch)
 
-            Toggle("Filter by favorite", isOn: $viewModel.filterByFavorite)
+            Toggle("Filter by favorite:", isOn: $viewModel.filterByFavorite)
                 .toggleStyle(.switch)
         }.padding()
     }
