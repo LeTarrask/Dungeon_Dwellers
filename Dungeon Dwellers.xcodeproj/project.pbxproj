@@ -24,6 +24,7 @@
 		791FF2DF2B4880BA006073D4 /* MonsterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2D92B4880BA006073D4 /* MonsterAdapter.swift */; };
 		791FF2E12B4880BA006073D4 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DC2B4880BA006073D4 /* MonsterListView.swift */; };
 		791FF2E22B4880BA006073D4 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */; };
+		7954AB9F2B96483300CEAD6A /* MonsterSplitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954AB9E2B96483300CEAD6A /* MonsterSplitListView.swift */; };
 		7967294A2B4D5FE700D1319A /* srd_5e_monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 796729492B4D5FE700D1319A /* srd_5e_monsters.json */; };
 		7967294C2B4D60F200D1319A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7967294B2B4D60F100D1319A /* README.md */; };
 		796729542B4D65FB00D1319A /* Dungeon_DwellersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796729532B4D65FB00D1319A /* Dungeon_DwellersTests.swift */; };
@@ -62,6 +63,7 @@
 		791FF2D92B4880BA006073D4 /* MonsterAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterAdapter.swift; sourceTree = "<group>"; };
 		791FF2DC2B4880BA006073D4 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		791FF2DD2B4880BA006073D4 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
+		7954AB9E2B96483300CEAD6A /* MonsterSplitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterSplitListView.swift; sourceTree = "<group>"; };
 		796729492B4D5FE700D1319A /* srd_5e_monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = srd_5e_monsters.json; sourceTree = "<group>"; };
 		7967294B2B4D60F100D1319A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		796729512B4D65FB00D1319A /* Dungeon DwellersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dungeon DwellersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				791FF2DC2B4880BA006073D4 /* MonsterListView.swift */,
+				7954AB9E2B96483300CEAD6A /* MonsterSplitListView.swift */,
 				79007BED2B894C74005D9E26 /* Subviews */,
 			);
 			path = "Monster List";
@@ -333,6 +336,7 @@
 				790CACD22B88E68600C5B0A4 /* MonsterListItemView.swift in Sources */,
 				79007BF22B894CC1005D9E26 /* Trait.swift in Sources */,
 				79BBC7532B88FE960084A4EF /* PersistenceController.swift in Sources */,
+				7954AB9F2B96483300CEAD6A /* MonsterSplitListView.swift in Sources */,
 				79007BF02B894C98005D9E26 /* MarkdownLabel.swift in Sources */,
 				791FF2DE2B4880BA006073D4 /* MonsterListViewModel.swift in Sources */,
 				790CACD02B88E5D200C5B0A4 /* MonsterListHeader.swift in Sources */,

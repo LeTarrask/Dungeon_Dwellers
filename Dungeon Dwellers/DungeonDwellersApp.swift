@@ -7,6 +7,9 @@
 
 import SwiftUI
 import CoreData
+#if os(iOS)
+import UIKit
+#endif
 
 @main
 struct DungeonDwellersApp: App {
@@ -25,8 +28,18 @@ struct DungeonDwellersApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MonsterListView()
+#if os(iOS)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                MonsterSplitListView()
+                    .environment(\.managedObjectContext, context)
+            } else {
+                MonsterListView()
+                    .environment(\.managedObjectContext, context)
+            }
+#elseif os(macOS) || targetEnvironment(macCatalyst)
+            MonsterSplitListView()
                 .environment(\.managedObjectContext, context)
+#endif
         }
     }
 }

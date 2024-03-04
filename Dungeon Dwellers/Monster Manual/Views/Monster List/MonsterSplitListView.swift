@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct MonsterSplitListView: View {
+    @StateObject var viewModel: MonsterListViewModel = MonsterListViewModel()
+    @Environment(\.managedObjectContext) var context
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationSplitView(sidebar: {
+            MonsterListView()
+                .frame(width: 250)
+        }, detail: {
+            Text("Select a Monster")
+        })
+        .onAppear {
+            viewModel.loadMonsters(context: context)
+        }
     }
 }
 
 #Preview {
     MonsterSplitListView()
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
