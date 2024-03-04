@@ -14,7 +14,7 @@ struct MonsterListHeader: View {
         VStack(alignment: .leading) {
             Text("SRD Monsters: \(viewModel.monsters.count)")
 
-            Toggle("Search by monster trait:", isOn: $viewModel.searchByName)
+            Toggle("Search by monster name:", isOn: $viewModel.searchByName)
                 .toggleStyle(.switch)
 
             Toggle("Filter by favorite:", isOn: $viewModel.filterByFavorite)
