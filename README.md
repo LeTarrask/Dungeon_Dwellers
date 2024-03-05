@@ -3,7 +3,7 @@
 #### Video Demo:  https://youtu.be/ydLn-wf0X54
 
 #### Description:
-The app is a useful reference tool for Dungeons & Dragons enthusiasts, as it provides them with a quick and easy way to access and explore the monsters from the 5th edition SRD. The app is also a showcase of the power and simplicity of SwiftUI, as it demonstrates how to create a functional cross-platform app in a simple project that can run on iOS, iPadOS, and MacOS.
+A project for Harvard CS50x. The app is a useful reference tool for Dungeons & Dragons enthusiasts, as it provides them with a quick and easy way to access and explore the monsters from the 5th edition SRD. The app is also a showcase of the power and simplicity of SwiftUI, as it demonstrates how to create a functional cross-platform app in a simple project that can run on iOS, iPadOS, and MacOS.
 
 This app is a Swift app developed with a SwiftUI front, that can be deployed for iOS, iPadOS or MacOS. It is a handy tool for Dungeons & Dragons players and dungeon masters, as it allows them to browse and search through hundreds of monsters from the 5th edition System Reference Document (SRD). The app uses the [5e SRD monsters json file](https://gist.github.com/tkfu/9819e4ac6d529e225e9fc58b358c3479), which contains the data of 327 monsters that are covered in the [Open Gaming License](https://dnd.wizards.com/resources/systems-reference-document). 
 
