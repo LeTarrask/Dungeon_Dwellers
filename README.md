@@ -47,5 +47,5 @@ The app is written in Swift 5.5 and uses SwiftUI 3.0. The app requires iOS 17, i
 
 **License**
 
-The app is open source and licensed under the (MIT License)[https://mit-license.org/]. The app is hosted on GitHub and welcomes contributions from the community. The app is not affiliated with or endorsed by Wizards of the Coast, the publisher of Dungeons & Dragons.
+The app is open source and licensed under the [MIT License](https://mit-license.org/). The app is hosted on GitHub and welcomes contributions from the community. The app is not affiliated with or endorsed by Wizards of the Coast, the publisher of Dungeons & Dragons.
 
